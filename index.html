@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GINT</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #001F3F;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.2em;
+            margin-right: 20px; /* Adicionei margem à direita */
+        }
+
+        nav {
+            background-image: none;
+            /* Remova o fundo fixo para dispositivos móveis */
+            padding: 10px;
+            opacity: 0.8;
+            text-align: center;
+            flex-grow: 1;
+            overflow-y: auto;
+            max-height: none; /* Remova a altura máxima para permitir rolar em dispositivos móveis */
+        }
+
+        ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        max-width: 900px; /* Ajuste conforme necessário */
+        margin: auto; /* Centralize a lista na tela */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    li {
+        background-color: #fff;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 10px; /* Ajuste o valor conforme necessário */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: calc(100% - 10px); /* Distribui igualmente em 3 colunas com margens de 5px */
+        box-sizing: border-box; /* Inclui a largura e a altura nas dimensões totais */
+        
+    }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: font-size 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: overline #fffb00;
+            font-size: 1.2em;
+        }
+
+        
+        footer {
+            background-color: #001F3F;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer p {
+            font-size: 12px; }
+
+            .sair-btn {
+            background-color: #3f0aff;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            font-size: 16px;
+            margin: 10px;
+            display: inline;
+            margin-top: 20px;
+            border-radius: 100px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sair-btn:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>GERÊNCIA DE INTELIGÊNCIA</h1>
+        <img src="logo.png" alt="institucional">
+
+    </header>
+    <nav>
+        <ul>
+            <li style="background-color: #004080; color: #fff;">
+                <a href="https://redscon.contagem.mg.gov.br/rbo/" target="_blank">REDSCON</a>
+            </li>
+            <li style="background-color: #004080; color: #fff;">
+                <a href="https://prefeituracontagem.sharepoint.com/sites/gccgeral" target="_blank">INTRANET</a>
+            </li>
+            <li style="background-color: #004080; color: #ffffff;">
+                <a href="https://maxnet.contagem.mg.gov.br/ADI_Intranet_Root/ADI_Programacao/ADI_MaxNetADI/startupMaxNet/login.jsp?sec=65a26ddb45556c0e7014d2e4013cb68d" target="_blank">CONTRA-CHEQUE</a>
+            </li>
+            <li style="background-color: #004080; color: #fff;">
+                <a href="https://outlook.office.com/calendar/view/month" target="_blank">AGENDA</a>
+            </li>
+            <li style="background-color: #004080; color: #fff;">
+                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=fjOGrl5XMEOUdpPeaCsAIKoW7M-RgcVLhj7J3FTbVSxUNFBYMTJMQVBYQlAyQ1BLN08zR0o0VkRURS4u"> ATIVIDADES DIÁRIA </a>
+            </li>
+
+            <li style="background-color: #004080; color: #fff;">
+                <a href="http://procurase.seguranca.mg.gov.br/" target="_blank">PROCURA-SE</a>
+            </li>
+            <li style="background-color: #004080; color: #fff;">
+                <a href="https://www.gov.br/anatel/pt-br/assuntos/celular-legal/consulte-sua-situacao" target="_blank">CONSULTA IMEI</a>
+            </li>
+            <li style="background-color: #004080; color: #fff;">
+                <a href="https://seguranca.sinesp.gov.br/sinesp-seguranca/login.jsf?goto=INFOSEG" target="_blank">INFOSEG</a>
+            </li>
+            <li style="background-color: #004080; color: #fff;">
+                <a href="https://prefeituracontagem-my.sharepoint.com/:x:/r/personal/leonardo_martins_contagem_mg_gov_br/Documents/RELAT%C3%93RIO%20DE%20SERVI%C3%87O%20DE%20INTELIG%C3%8ANCIA%20-%20R.G.I.xlsx?d=w755c3885fa854809a339b1ee35f46e3d&csf=1&web=1&e=VXNuUX" target="_blank">RELATÓRIO DE INTELIGÊNCIA</a>
+            </li>
+            <li style="background-color: #004080; color: #fff;">
+                <a href="https://forms.office.com/pages/responsepage.aspx?id=fjOGrl5XMEOUdpPeaCsAIHmYImMOR51Og00d0e7au4xUNDM3TFlVTkxPWjQ5MVhTUEM5OFlBVUtSRi4u" target="_blank">FICHA DE VISTORIA</a>
+            </li>
+            <li style="background-color: #004080; color: #fff;">
+                <a href="https://forms.office.com/r/AdZfWBF9mK" target="_blank">CADASTRO DE PICHAÇÕES</a>
+            </li>
+            <li style="background-color: #004080; color: #fff;">
+                <a href="https://osintframework.com/" target="_blank">OSINT</a>
+            </li>
+            <li style="background-color: #004080; color: #fff;">
+                <a href="https://geoprocessamento.contagem.mg.gov.br/portal/apps/webappviewer/index.html?id=9f1a37789e524bd49e6815f16f959021" target="_blank">BAIRROS/CONTAGEM</a>
+            </li>
+            <li style="background-color: #004080; color: #fff;">
+                <a href="https://geoprocessamento.contagem.mg.gov.br/portal/apps/webappviewer/index.html?id=d932e1b1fc954de299b9eba43e542082" target="_blank">REDE SOCIOASSISTENCIAL</a>
+            </li>
+            <li style="background-color: #004080; color: #fff;">
+                <a href="https://pwa4.app.vc/legislacoes/home" target="_blank">LEGISLAÇÕES</a> </li>
+                <li style="background-color: #004080; color: #fff;">
+                    <a href="https://forms.office.com/r/UPA0A9cLdf" target="_blank">REGISTRO DE INDIVÍDUOS</a>
+                </li>
+
+                 <iframe src="https://www.google.com/maps/d/embed?mid=1lFjCK2oZjSe32APPhy8raS0ANIwua9E&ehbc=2E312F" width="100%" height="480"></iframe>
+
+        </ul>
+    </nav>
+   
+    <footer>
+        <p>gint.gcc@contagem.mg.gov.br   |   (31) 3198-8683  |  &copy; 2024</p> 
+        
+    </footer>
+</body>
+
+</html>
