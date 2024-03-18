@@ -1,0 +1,19 @@
+{
+    "background_color": "#ffffff",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "GINT",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "GINT",
+    "start_url": "/",
+    "theme_color": "#ffffff",
+    "icons": [
+      {
+        "src": "logo.png",
+        "type": "logo.png",
+        "sizes": "32x32"
+      }
+    ],
+    "description": "Gerência de Inteligência"
+  }

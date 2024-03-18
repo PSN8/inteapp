@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GINT</title>
     <link rel="icon" type="image/png" href="logo.png">
+    <link rel="manifest" herf="%PUBLIC_URL%/manifest.json"/>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -121,6 +122,11 @@
             background-color: #cc0000;
         }
     </style>
+    <script>
+        if (typeof navigator.serviceWorker !== 'undefined') {
+            navigator.serviceWorker.register('pwabuilder-sw.js')
+        }
+    </script>
 </head>
 
 <body>
